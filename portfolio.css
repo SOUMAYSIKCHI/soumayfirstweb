@@ -8,9 +8,16 @@
     text-decoration: none;
     border: none;
     outline: none;
-    scroll-behavior: smooth;
+    scroll-behavior: none;
+    overflow-x: hidden;
 }
 
+@media(max-width:658px){
+    .navbar{
+        display:flex;
+        flex-direction: column;
+    }
+}
   
 
 body{
@@ -43,23 +50,25 @@ bottom: 0;
 }
 
 .home-content{
-    position: fixed;
+    position: relative;
     color: #fff;
     top: 280px;
     left: 70px;
     font-size: 30px;
     padding: 30px;
     border: 30px;
+    flex-wrap: wrap;
 
 }
 .home-img{
-    position: fixed;
+    position: relative;
     float: left;
-    display:inline;
+    display:flex;
     left: 1050px;
-    top:160px;
+    top:-139px;
     background-size: cover;
     color: transparent;
+    flex-wrap: wrap;
 }
 
 .navbar a{
